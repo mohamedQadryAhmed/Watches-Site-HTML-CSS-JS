@@ -413,3 +413,40 @@ button {
 .featured-card:hover .featured-price {
     margin-bottom: var(--mb-1-5);
 }
+
+/* ----------- Story section ----------- */
+.story-container {
+    row-gap: 7.5rem;
+
+}
+
+.story-title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.story-description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.story-images {
+    position: relative;
+
+}
+
+.story-img,
+.story-square {
+    width: 250px;
+}
+
+.story-square {
+    height: 250px;
+    background-color: var(--first-color);
+
+}
+
+.story-img{
+    position: absolute;
+    left: 3rem;
+    top: -3rem;
+}
