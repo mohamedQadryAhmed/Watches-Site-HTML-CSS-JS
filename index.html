@@ -12,6 +12,8 @@
     />
     <!-- ------ BoxIcons --------- -->
     <link rel="stylesheet" href="./assets/css/boxicons.min.css" />
+    <!-- ------------ Swiper ---------- -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!--------- CSS File ------------->
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
@@ -33,7 +35,7 @@
         </div>
         <div class="nav-buttons">
           <div class="cart-icon">
-            <a href=""><i class="bx bx-shopping-bag"></i></a>
+            <a href><i class="bx bx-shopping-bag"></i></a>
           </div>
           <div class="menu-icon">
             <i class="bx bx-menu"></i>
@@ -46,7 +48,7 @@
       <section class="home" id="home">
         <div class="home-container container grid">
           <div class="home-img-bg">
-            <img src="./assets/images/home.png" class="home-img" alt="" />
+            <img src="./assets/images/home.png" class="home-img" alt />
           </div>
           <div class="home-social">
             <a
@@ -82,7 +84,7 @@
             </p>
             <span class="home-price">$1245</span>
             <div class="home-btns">
-              <a href="" class="button button-gray button-small"> Discover </a>
+              <a href class="button button-gray button-small"> Discover </a>
               <button class="button home-button">ADD TO CARD</button>
             </div>
           </div>
@@ -90,117 +92,204 @@
       </section>
       <!-- ------------ Featured ---------------- -->
       <section class="featured section container" id="featured">
-        <h2 class="section-title">
-            Featured
-        </h2>
+        <h2 class="section-title">Featured</h2>
         <div class="featured-container grid">
-            <article class="featured-card">
-                <span class="featured-tag">Sale</span>
-                <img src="assets/images/featured1.png" class="featured-img" alt="">
-                <div class="featured-data">
-                    <h3 class="featured-title">Jazzmaster</h3>
-                    <span class="featured-price">$1050</span>
-                </div>
-                <button class="button featured-btn">ADD TO CART</button>
-            </article>
-            <article class="featured-card">
-                <span class="featured-tag">Sale</span>
-                <img src="assets/images/featured2.png" class="featured-img" alt="">
-                <div class="featured-data">
-                    <h3 class="featured-title">Ingersoll</h3>
-                    <span class="featured-price">$250</span>
-                </div>
-                <button class="button featured-btn">ADD TO CART</button>
-            </article>
-            <article class="featured-card">
-                <span class="featured-tag">Sale</span>
-                <img src="assets/images/featured3.png" class="featured-img" alt="">
-                <div class="featured-data">
-                    <h3 class="featured-title">Rose gold</h3>
-                    <span class="featured-price">$890</span>
-                </div>
-                <button class="button featured-btn">ADD TO CART</button>
-            </article>
+          <article class="featured-card">
+            <span class="featured-tag">Sale</span>
+            <img src="assets/images/featured1.png" class="featured-img" alt />
+            <div class="featured-data">
+              <h3 class="featured-title">Jazzmaster</h3>
+              <span class="featured-price">$1050</span>
+            </div>
+            <button class="button featured-btn">ADD TO CART</button>
+          </article>
+          <article class="featured-card">
+            <span class="featured-tag">Sale</span>
+            <img src="assets/images/featured2.png" class="featured-img" alt />
+            <div class="featured-data">
+              <h3 class="featured-title">Ingersoll</h3>
+              <span class="featured-price">$250</span>
+            </div>
+            <button class="button featured-btn">ADD TO CART</button>
+          </article>
+          <article class="featured-card">
+            <span class="featured-tag">Sale</span>
+            <img src="assets/images/featured3.png" class="featured-img" alt />
+            <div class="featured-data">
+              <h3 class="featured-title">Rose gold</h3>
+              <span class="featured-price">$890</span>
+            </div>
+            <button class="button featured-btn">ADD TO CART</button>
+          </article>
         </div>
-
       </section>
       <!-- -------- Story Section ---------- -->
       <section class="story section container">
         <div class="story-container grid">
           <div class="story-data">
-            <h2 class="section-title story-section-title">
-                Our Story
-            </h2>
+            <h2 class="section-title story-section-title">Our Story</h2>
             <h1 class="story-title">
-              Inspirational Watch of <br> this year
+              Inspirational Watch of <br />
+              this year
             </h1>
             <p class="story-description">
-              The latest and modern watches of this year, is available in various presentations in this store, discover them now.
+              The latest and modern watches of this year, is available in
+              various presentations in this store, discover them now.
             </p>
             <a href="#" class="button button-small">Discover</a>
           </div>
           <div class="story-images">
-            <img src="assets/images/story.png" alt="" class="story-img">
+            <img src="assets/images/story.png" alt class="story-img" />
             <div class="story-square"></div>
-        </div>
+          </div>
         </div>
       </section>
       <!-- ---------- Products Section ------------ -->
-       <section class="products section container" id="products">
-          <h2 class="section-title">
-            Products
-          </h2>
-          <div class="products-container grid">
-            <article class="product-card">
-              <img src="assets/images/product1.png" class="product-img" alt="">
-              <h3 class="product-title">Spirit rose</h3>
-              <span class="product-price">$1500</span>
+      <section class="products section container" id="products">
+        <h2 class="section-title">Products</h2>
+        <div class="products-container grid">
+          <article class="product-card">
+            <img src="assets/images/product1.png" class="product-img" alt />
+            <h3 class="product-title">Spirit rose</h3>
+            <span class="product-price">$1500</span>
 
-              <button class="product-button">
-                <i class='bx bx-shopping-bag'></i>
-              </button>
-            </article>
+            <button class="product-button">
+              <i class="bx bx-shopping-bag"></i>
+            </button>
+          </article>
 
-            <article class="product-card">
-              <img src="assets/images/product2.png" class="product-img" alt="">
-              <h3 class="product-title">Khaki pilot</h3>
-              <span class="product-price">$1350</span>
+          <article class="product-card">
+            <img src="assets/images/product2.png" class="product-img" alt />
+            <h3 class="product-title">Khaki pilot</h3>
+            <span class="product-price">$1350</span>
 
-              <button class="product-button">
-                <i class='bx bx-shopping-bag'></i>
-              </button>
-            </article>
-            <article class="product-card">
-              <img src="assets/images/product3.png" class="product-img" alt="">
-              <h3 class="product-title">Jubilee black</h3>
-              <span class="product-price">$870</span>
+            <button class="product-button">
+              <i class="bx bx-shopping-bag"></i>
+            </button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/product3.png" class="product-img" alt />
+            <h3 class="product-title">Jubilee black</h3>
+            <span class="product-price">$870</span>
 
-              <button class="product-button">
-                <i class='bx bx-shopping-bag'></i>
-              </button>
-            </article>
-            <article class="product-card">
-              <img src="assets/images/product4.png" class="product-img" alt="">
-              <h3 class="product-title">Fosil me3</h3>
-              <span class="product-price">$650</span>
+            <button class="product-button">
+              <i class="bx bx-shopping-bag"></i>
+            </button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/product4.png" class="product-img" alt />
+            <h3 class="product-title">Fosil me3</h3>
+            <span class="product-price">$650</span>
 
-              <button class="product-button">
-                <i class='bx bx-shopping-bag'></i>
-              </button>
-            </article>
-            <article class="product-card">
-              <img src="assets/images/product5.png" class="product-img" alt="">
-              <h3 class="product-title">Duchen</h3>
-              <span class="product-price">$950</span>
+            <button class="product-button">
+              <i class="bx bx-shopping-bag"></i>
+            </button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/product5.png" class="product-img" alt />
+            <h3 class="product-title">Duchen</h3>
+            <span class="product-price">$950</span>
 
-              <button class="product-button">
-                <i class='bx bx-shopping-bag'></i>
-              </button>
-            </article>
+            <button class="product-button">
+              <i class="bx bx-shopping-bag"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+      <!-- ------------ Testmimonial Section ----------- -->
+      <section class="testimonial section container">
+        <div class="testimonial-container grid">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial-card swiper-slide">
+                <div class="testimonial-quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial-description">
+                  They are the best watches that one acquires, also they are
+                  always with the latest news and trends, with a very
+                  comfortable price and especially with the attention you
+                  receive, they are always attentive to your questions.
+                </p>
+                <h3 class="testimonial-date">March 27. 2021</h3>
+                <div class="testimonial-profile">
+                  <img
+                    src="assets/images/testimonial1.jpg"
+                    alt
+                    class="profile-img"
+                  />
+                  <div class="profile-data">
+                    <span class="profile-name">Lee Doe</span>
+                    <span class="profile-detail">Director of a company</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card swiper-slide">
+                <div class="testimonial-quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial-description">
+                  They are the best watches that one acquires, also they are
+                  always with the latest news and trends, with a very
+                  comfortable price and especially with the attention you
+                  receive, they are always attentive to your questions.
+                </p>
+                <h3 class="testimonial-date">March 27. 2021</h3>
+                <div class="testimonial-profile">
+                  <img
+                    src="assets/images/testimonial2.jpg"
+                    alt
+                    class="profile-img"
+                  />
+                  <div class="profile-data">
+                    <span class="profile-name">Samantha Mey</span>
+                    <span class="profile-detail">Director of a company</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card swiper-slide">
+                <div class="testimonial-quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial-description">
+                  They are the best watches that one acquires, also they are
+                  always with the latest news and trends, with a very
+                  comfortable price and especially with the attention you
+                  receive, they are always attentive to your questions.
+                </p>
+                <h3 class="testimonial-date">March 27. 2021</h3>
+                <div class="testimonial-profile">
+                  <img
+                    src="assets/images/testimonial3.jpg"
+                    alt
+                    class="profile-img"
+                  />
+                  <div class="profile-data">
+                    <span class="profile-name">Raul Zaman</span>
+                    <span class="profile-detail">Director of a company</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
           </div>
-       </section>
+          <div class="testimonial-images">
+            <div class="testimonial-square"></div>
+            <img
+              src="assets/images/testimonial.png"
+              alt
+              class="testimonial-img"
+            />
+          </div>
+        </div>
+      </section>
     </main>
-
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
