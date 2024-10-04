@@ -34,8 +34,8 @@
           </div>
         </div>
         <div class="nav-buttons">
-          <div class="cart-icon">
-            <a href><i class="bx bx-shopping-bag"></i></a>
+          <div class="cart-icon" id="cart-toggle">
+            <i class="bx bx-shopping-bag"></i>
           </div>
           <div class="menu-icon">
             <i class="bx bx-menu"></i>
@@ -43,6 +43,85 @@
         </div>
       </nav>
     </header>
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart-close" id="close-cart"></i>
+      <h2 class="cart-title-center">My Cart</h2>
+      <div class="cart-container">
+        <article class="cart-card">
+          <div class="cart-box">
+            <img src="assets/images/featured1.png" class="cart-img" alt="" />
+          </div>
+
+          <div class="cart-details">
+            <h3 class="cart-title">Jazzmaster</h3>
+            <span class="cart-price">$1050</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart-amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart-card">
+          <div class="cart-box">
+            <img src="assets/images/featured2.png" class="cart-img" alt="" />
+          </div>
+
+          <div class="cart-details">
+            <h3 class="cart-title">Rose Gold</h3>
+            <span class="cart-price">$850</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart-amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart-card">
+          <div class="cart-box">
+            <img src="assets/images/featured3.png" class="cart-img" alt="" />
+          </div>
+
+          <div class="cart-details">
+            <h3 class="cart-title">Longines Rose</h3>
+            <span class="cart-price">$980</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart-amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="cart-prices">
+        <span class="cart-prices-item">3 items</span>
+        <span class="cart-prices-total">$2800</span>
+      </div>
+    </div>
     <main class="main">
       <!-- ---------- Home -------------- -->
       <section class="home" id="home">
@@ -359,96 +438,96 @@
         </div>
       </section>
     </main>
-      <!-- -------- Footer ---------- -->
-      <footer class="footer section">
-        <div class="footer-container container grid">
-          <div class="footer-content">
-            <h3 class="footer-title">Our information</h3>
+    <!-- -------- Footer ---------- -->
+    <footer class="footer section">
+      <div class="footer-container container grid">
+        <div class="footer-content">
+          <h3 class="footer-title">Our information</h3>
 
-            <ul class="footer-list">
-              <li>1234 - Alx</li>
-              <li>Lorem, ipsum dolor.</li>
-              <li>123-456-789</li>
-            </ul>
-          </div>
-          <div class="footer-content">
-            <h3 class="footer-title">About Us</h3>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#" class="footer-link">Support Center</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Customer Support</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Copy Right</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-content">
-            <h3 class="footer-title">Product</h3>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#" class="footer-link">Road bikes</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Mountain bikes</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Electric</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Accesories</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-content">
-            <h3 class="footer-title">Social</h3>
-
-            <ul class="footer-social">
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  class="footer-social-link"
-                >
-                  <i class="bx bxl-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  class="footer-social-link"
-                >
-                  <i class="bx bxl-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  class="footer-social-link"
-                >
-                  <i class="bx bxl-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="footer-list">
+            <li>1234 - Alx</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>123-456-789</li>
+          </ul>
         </div>
-        <span class="footer-copy">&#169; Bedimcode. All rigths reserved</span>
-      </footer>
+        <div class="footer-content">
+          <h3 class="footer-title">About Us</h3>
 
-      <!-- --------- Scroll Up --------- -->
-      <a href="#" class="scrollup" id="scroll-up"> 
-        <i class='bx bx-up-arrow-alt scrollup-icon' ></i>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">Support Center</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Customer Support</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Copy Right</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">Product</h3>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">Road bikes</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Mountain bikes</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Electric</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Accesories</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-title">Social</h3>
+
+          <ul class="footer-social">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="footer-copy">&#169; Bedimcode. All rigths reserved</span>
+    </footer>
+
+    <!-- --------- Scroll Up --------- -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup-icon"></i>
     </a>
-    
+
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

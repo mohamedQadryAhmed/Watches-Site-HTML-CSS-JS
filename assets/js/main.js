@@ -91,3 +91,21 @@ function showScrollUp () {
 }
 
 window.addEventListener('scroll', showScrollUp);
+
+// ---------- Show Cart ------------
+
+const cartToggle = document.getElementById("cart-toggle");
+const cart = document.getElementById("cart")
+const closeCart = document.getElementById("close-cart");
+
+if(cartToggle){
+  cartToggle.addEventListener('click' , () => {
+    cart.classList.add('show-cart');
+  }) 
+}
+
+if(closeCart){
+  closeCart.addEventListener('click' , () => {
+    cart.classList.remove('show-cart');
+  }) 
+}
