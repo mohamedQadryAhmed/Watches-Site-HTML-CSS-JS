@@ -109,3 +109,27 @@ if(closeCart){
     cart.classList.remove('show-cart');
   }) 
 }
+
+/* --------- Dark Light Theme -------*/
+const themeToggle = document.getElementById("theme-btn");
+const darkTheme = 'dark-theme';
+const iconTheme = 'bx-sun';
+
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+const getCurrentTheme = () => document.body.classList.contains('darkTheme') ? 'dark' : 'light';
+const getCurrentIcon = () => themeToggle.classList.contains('iconTheme') ? 'bx bx-moon' : 'bx bx-sun';
+
+if (selectedTheme){
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+  themeToggle.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme);
+}
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle(darkTheme);
+  themeToggle.classList.toggle(iconTheme);
+
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
